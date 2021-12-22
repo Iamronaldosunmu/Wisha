@@ -9,9 +9,14 @@ import finger from '../images/hand_one_finger.png';
 const Home = (props) => {
   return (
     <motion.div className="homePage">
-      <NavBar history={props.history} />
       <img src={finger} className="finger"/>
-      <div className="mainContainer">
+      <NavBar history={props.history} />
+      <motion.div 
+        className="mainContainer"
+        exit={{
+          opacity: 0
+        }}
+        >
         <div className="textWithButtonContainer">
           <h1 className="header">Gifting made <span className="gradientText">easier</span></h1>
           <div className="text">Wisha makes it easy for you to share your  wishlists and recieve gifts in the form of money from your friends, family, followers, fans with only one link </div>
@@ -28,7 +33,7 @@ const Home = (props) => {
         </motion.div>
         <GiftSvg />
         </div>
-      </div>
+      </motion.div>
       <WaitListForm />
     </motion.div>
   );

@@ -2,6 +2,7 @@ import Rocket from "./Rocket";
 import { useState } from "react";
 import axios from 'axios';
 import Joi from 'joi-browser';
+import {motion} from 'framer-motion';
 
 export default function WaitListForm() {
     const [payload, setPayload] = useState({email: ""});
@@ -40,12 +41,16 @@ export default function WaitListForm() {
         console.log(payload);
     }
     return (
-        <form className="waitListForm" onSubmit={handleSubmit}>
+        <motion.form 
+          className="waitListForm" 
+          onSubmit={handleSubmit}
+          exit={{opacity: 0}}
+        >
             <Rocket />
             <p className="description">Get notified when we launch</p>
             <input className="formInput" placeholder="Your email" value={payload.email} onChange={handleChange}/>
             {errors && <span className="errorText">{errors}</span>}
             <button className="submitButton" type="submit">Join the waitlist</button>
-        </form>
+        </motion.form>
     );
 }

@@ -48,6 +48,8 @@ body {
   text-align: right;
   padding-right: 4px;
   padding-top: 5px;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 .wishaLogoHome {
   position: absolute;
@@ -223,7 +225,7 @@ body {
     padding: 0;
   }
   .text {
-    font-size: 25px;
+    font-size: 21px;
     max-width: 680px;
     margin-bottom: 0;
   }
@@ -330,6 +332,19 @@ body {
     margin: 90px 15px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .waitListForm {
+    max-width: 600px;
+    padding: 60px 20px;
+  }
+  .formInput,
+  .submitButton {
+    max-width: 480px;
+  }
+  .rocketContainer {
+    transform: scale(1.35);
+  }
+}
 .waitListForm .description {
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 35px;
@@ -360,6 +375,24 @@ body {
   color: white;
   background-image: linear-gradient(45deg, #ae4a9f, #c3203d);
 }
+@media screen and (min-width: 1024px) {
+  .formInput,
+  .submitButton {
+    font-size: 23px;
+    padding: 25px 30px;
+    height: 75px;
+    border-radius: 28px;
+  }
+  .formInput {
+    margin-top: 40px;
+  }
+  .submitButton {
+    margin-top: 50px;
+  }
+  .waitListForm .description {
+    margin-top: 30px;
+  }
+}
 .errorText {
   color: red;
   display: block;
@@ -381,10 +414,19 @@ body {
 }
 .homePage {
   position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 /* Styles for the finger image */
 .finger {
   position: absolute;
-  transform: scale(0.85);
+  transform: scale(0.7);
+  top: -100px;
+  left: 305px;
+}
+@media screen and (max-width: 1200px) {
+  .finger {
+    display: none;
+  }
 }
 /* TODO: add a max width to all the containers */
