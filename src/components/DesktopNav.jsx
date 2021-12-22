@@ -16,10 +16,8 @@ export default function DesktopNav(props) {
     >
       <ul>
         <li>Home</li>
-        <li>Pricing</li>
-        <li>Contact us</li>
-        <li>Sign-in</li>
-        <button>Sign-up</button>
+        <li>Join</li>
+        <li>Follow us</li>
       </ul>
     </motion.nav>
   );

@@ -71,7 +71,7 @@ body {
   box-shadow: 0;
   border: 0;
 }
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 1024px) {
   .navButton {
     display: none;
   }
@@ -167,7 +167,7 @@ body {
   border: 0;
   border-radius: 13px;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 1024px) {
   .desktopNav {
     display: none;
   }
@@ -209,8 +209,24 @@ body {
   font-family: "Enconde ", sans-serif;
   padding: 0 20px;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  z-index: 1;
+  max-width: 500px;
+  margin: 0 auto 30px;
   /* bottom: 210px; */
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    font-size: 70px;
+    margin-bottom: 43px;
+    margin-top: 0;
+    padding: 0;
+  }
+  .text {
+    font-size: 25px;
+    max-width: 680px;
+    margin-bottom: 0;
+  }
 }
 .gradientText {
   background-color: red;
@@ -236,10 +252,26 @@ body {
   right: -17px;
   transform: scale(0.85);
 }
+@media screen and (min-width: 1024px) {
+  .gradientText::before {
+    transform: scale(1.6);
+    bottom: -5px;
+    right: 50px;
+  }
+  .gradientText::after {
+    transform: scale(1.5);
+    right: -35px;
+  }
+}
 .giftSvg {
   position: absolute;
   top: calc(50% - 114px);
   /* bottom: 200px; */
+}
+@media screen and (min-width: 1024px) {
+  .giftSvg {
+    transform: scale(1.3);
+  }
 }
 .giftContainer {
   position: relative;
@@ -257,6 +289,28 @@ body {
   border-radius: 50%;
   margin-bottom: 25px;
 }
+.waitlistButton {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 30px;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  border-radius: 25px;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .waitlistButton {
+    font-size: 29px;
+    padding: 18px 80px;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
 /* Styles for the wait-list form */
 .waitListForm {
   display: flex;
@@ -269,6 +323,7 @@ body {
   margin: 0 auto;
   max-width: 330px;
   margin-top: 90px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 358px) {
   .waitListForm {
@@ -287,7 +342,6 @@ body {
   width: 100%;
   font-size: 16px;
   height: 54px;
-  margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.5);
 }
 .formInput:focus {
@@ -302,6 +356,35 @@ body {
   font-size: 18px;
   height: 54px;
   margin-bottom: 30px;
+  margin-top: 20px;
   color: white;
   background-image: linear-gradient(45deg, #ae4a9f, #c3203d);
 }
+.errorText {
+  color: red;
+  display: block;
+  font-size: 14px;
+  margin-top: 20px;
+}
+/* Styles for the different types of containers */
+@media screen and (min-width: 1024px) {
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    margin-top: 190px;
+    margin-bottom: 180px;
+  }
+  .textWithButtonContainer {
+    justify-self: flex-start;
+  }
+}
+.homePage {
+  position: relative;
+}
+/* Styles for the finger image */
+.finger {
+  position: absolute;
+  transform: scale(0.85);
+}
+/* TODO: add a max width to all the containers */
