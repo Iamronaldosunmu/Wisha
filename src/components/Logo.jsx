@@ -10,7 +10,7 @@ const ColouredLogo = (props) => (
       height={height}
       initial={{
         scale: 0.35,
-        y: -40
+        y: -50
       }}
       animate={{ y: 0 }}
       exit={{
@@ -22,9 +22,8 @@ const ColouredLogo = (props) => (
       }}
       transition={
         {
-          // duration: 4.2,
-          // ease: "easeInOut",
-          // times: [0, 0.12, 0.25, 0.4, 0.55, 0.7, 0.85, 1]
+          duration: 0.6, 
+          delay: 0.4
         }
       }
       viewBox="0 0 88 31"
@@ -92,7 +91,7 @@ const ColouredLogo = (props) => (
       </defs>
     </motion.svg>
     <motion.div
-      initial={{ y: -40 }}
+      initial={{ y: -50 }}
       animate={{ y: 0 }}
       exit={{
         opacity: 0,
@@ -100,6 +99,11 @@ const ColouredLogo = (props) => (
           duration: 0.2
         }
       }}
+      transition={
+        {
+          duration: 0.6, 
+          delay: 0.4
+        }}
       className="navWishaLogoText"
     >
       wisha

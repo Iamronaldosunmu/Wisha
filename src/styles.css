@@ -205,6 +205,9 @@ body {
   padding: 0 20px;
   line-height: 3.5rem;
 }
+.header .span {
+  display: inline-block;
+}
 .text {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
@@ -303,6 +306,12 @@ body {
   z-index: 1;
   position: relative;
   margin-bottom: 60px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.waitlistButton:active {
+  transform: scale(0.95);
 }
 @media screen and (min-width: 1024px) {
   .waitlistButton {
@@ -374,6 +383,10 @@ body {
   margin-top: 20px;
   color: white;
   background-image: linear-gradient(45deg, #ae4a9f, #c3203d);
+  transition: all 0.3s;
+}
+.submitButton:active {
+  transform: scale(0.9);
 }
 @media screen and (min-width: 1024px) {
   .formInput,
@@ -429,4 +442,22 @@ body {
     display: none;
   }
 }
+.successMessage {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.externalLink {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s;
+}
+.externalLink:hover {
+  color: white;
+}
+.navLinkSection .externalLink {
+  color: white;
+}
 /* TODO: add a max width to all the containers */
+/* TODO: Link the join the waitlist button to the waitlist form */

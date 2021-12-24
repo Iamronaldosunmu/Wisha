@@ -3,6 +3,11 @@ export default function NavScreen(props) {
   const handleClick = () => {
     props.history.push("/home");
   };
+  const formRedirect = () => {
+    props.history.push('/home');
+    setTimeout(() => document.querySelector('#waitlist').scrollIntoView({behavior: 'smooth'}), 3000)
+    
+  }
   const navLinkContainerVariant = {
     animate: {
       transition: {
@@ -100,9 +105,9 @@ export default function NavScreen(props) {
         exit="exit"
         className="navLinkSection"
       >
-        <motion.li variants={navLinkVariant}>Home</motion.li>
-        <motion.li variants={navLinkVariant}>Join</motion.li>
-        <motion.li variants={navLinkVariant}>Follow us</motion.li>
+        <motion.li variants={navLinkVariant} onClick={handleClick}>Home</motion.li>
+        <motion.li variants={navLinkVariant} onClick={formRedirect}>Join</motion.li>
+        <motion.li onClick={() => alert("Please use a VPN if you are from Nigeria")}variants={navLinkVariant}><a className="externalLink"href="https://twitter.com/WishaApp">Follow us</a></motion.li>
       </motion.ul>
     </>
   );
