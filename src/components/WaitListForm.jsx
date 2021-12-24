@@ -20,7 +20,7 @@ export default function WaitListForm() {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const apiEndpoint = "http://localhost:4000/api/emails";
+        const apiEndpoint = "https://wishaapp.herokuapp.com/api/emails";
         const options = {abortEarly: true};
         const {error} = Joi.validate(payload, schema);
         if (error) {
