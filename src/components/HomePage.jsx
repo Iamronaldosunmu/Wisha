@@ -20,8 +20,8 @@ const Home = (props) => {
         >
         <div className="textWithButtonContainer">
           <Header />
-          <motion.div className="text" initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}} transition={{duration: 0.85, delay: 6.7, ease: "anticipate"}}>Wisha makes it easy for you to share your  wishlists and recieve gifts in the form of money from your friends, family, followers, fans with only one link </motion.div>
-          <motion.button className="waitlistButton" onClick={() => document.querySelector('#waitlist').scrollIntoView({   behavior: 'smooth' })} initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 7.8, duration: 0.5}}>Join the waitlist</motion.button>
+          <motion.div className="text" initial={{opacity: 0, y: 50}} animate={{opacity: 1, y: 0}} transition={{duration: 0.85, delay: 6.7, ease: "anticipate"}}>Create wishlists and recieve money from your fans, followers and loved ones with the click of a link 😜</motion.div>
+          <motion.button className="waitlistButton" onClick={() => document.querySelector('#waitlist').scrollIntoView({   behavior: 'smooth' })} initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 7.8, duration: 0.5}}>Join wisha</motion.button>
         </div>
         <div className="giftContainer">
         <motion.div

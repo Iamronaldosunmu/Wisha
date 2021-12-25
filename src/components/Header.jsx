@@ -59,7 +59,7 @@ export default function Header() {
             <motion.span variants={childrenVariant}>e</motion.span>
             <span> </span>
         
-        <motion.span className="gradientText" variants={gradientTextVariant}>easier</motion.span>
+        <motion.span className="gradientText" variants={gradientTextVariant}>easy</motion.span>
         </motion.h1>
     );
 }

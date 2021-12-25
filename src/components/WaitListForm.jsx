@@ -12,7 +12,7 @@ export default function WaitListForm() {
     const opacity = useTransform(scrollYProgress, [0.3, 1],  [0, 1]);
     const y = useTransform(scrollYProgress, [0, 1], [-100, 0]);
     const handleChange = (e) => {
-        const email = e.currentTarget.value;
+        const email = e.currentTarget.value.trim();
         setPayload({email})
     };
     const schema = {

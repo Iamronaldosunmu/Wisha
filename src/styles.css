@@ -201,11 +201,11 @@ body {
   font-weight: 800;
   position: relative;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0 20px;
   line-height: 3.5rem;
 }
-@media screen and (min-width: 1024px)  and (max-width: 1145px){
+@media screen and (min-width: 1024px){
   .header {
     line-height: 1.1;
   }
@@ -251,10 +251,9 @@ body {
 .gradientText::before {
   content: url("./images/underline.svg");
   position: absolute;
-  bottom: -15px;
-  right: 7px;
-  transform: scale(0.92);
-  width: 120px;
+  bottom: -20px;
+  right: -20px;
+  transform: scale(0.73);
 }
 .gradientText::after {
   content: url("./images/exclamation.svg");
@@ -264,13 +263,14 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .gradientText::before {
-    transform: scale(1.6);
-    bottom: -5px;
-    right: 50px;
+    transform: scale(1.2);
+    bottom: -14px;
+    right: 13px;
   }
   .gradientText::after {
-    transform: scale(1.5);
-    right: -35px;
+    transform: scale(1.4);
+    right: -30px;
+    top: 10px;
   }
 }
 .giftSvg {
