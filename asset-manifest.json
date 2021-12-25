@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Wisha/static/css/main.c95d7628.chunk.css",
-    "main.js": "/Wisha/static/js/main.908d8fad.chunk.js",
-    "main.js.map": "/Wisha/static/js/main.908d8fad.chunk.js.map",
+    "main.css": "/Wisha/static/css/main.b6815932.chunk.css",
+    "main.js": "/Wisha/static/js/main.067f070a.chunk.js",
+    "main.js.map": "/Wisha/static/js/main.067f070a.chunk.js.map",
     "runtime-main.js": "/Wisha/static/js/runtime-main.7da8ebea.js",
     "runtime-main.js.map": "/Wisha/static/js/runtime-main.7da8ebea.js.map",
     "static/js/2.f86d6f54.chunk.js": "/Wisha/static/js/2.f86d6f54.chunk.js",
     "static/js/2.f86d6f54.chunk.js.map": "/Wisha/static/js/2.f86d6f54.chunk.js.map",
     "index.html": "/Wisha/index.html",
-    "static/css/main.c95d7628.chunk.css.map": "/Wisha/static/css/main.c95d7628.chunk.css.map",
+    "static/css/main.b6815932.chunk.css.map": "/Wisha/static/css/main.b6815932.chunk.css.map",
     "static/js/2.f86d6f54.chunk.js.LICENSE.txt": "/Wisha/static/js/2.f86d6f54.chunk.js.LICENSE.txt",
     "static/media/styles.css": "/Wisha/static/media/underline.651ccf0f.svg",
     "static/media/hand_one_finger.11889f19.png": "/Wisha/static/media/hand_one_finger.11889f19.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.7da8ebea.js",
     "static/js/2.f86d6f54.chunk.js",
-    "static/css/main.c95d7628.chunk.css",
-    "static/js/main.908d8fad.chunk.js"
+    "static/css/main.b6815932.chunk.css",
+    "static/js/main.067f070a.chunk.js"
   ]
 }
