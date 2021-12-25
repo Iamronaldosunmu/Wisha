@@ -6,7 +6,7 @@ import App from "./App";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <Router>
+    <Router basename="/Wisha">
       <App />
     </Router>
   </StrictMode>,
