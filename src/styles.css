@@ -440,7 +440,7 @@ body {
   position: absolute;
   transform: scale(0.7);
   top: -100px;
-  left: 305px;
+  left: 285px;
 }
 @media screen and (max-width: 1150px) {
   .finger {
